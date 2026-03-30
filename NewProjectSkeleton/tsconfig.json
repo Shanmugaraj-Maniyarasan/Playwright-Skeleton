@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["pages/*"],
+      "@steps/*": ["steps/*"],
+      "@data-utils/*": ["data-utils/*"],
+      "@test-data-excel/*": ["test-data-excel/*"]
+    }
+  },
+  "include": [
+    "features",
+    "steps",
+    "pages",
+    "data-utils",
+    "types",
+    "test-data-excel",
+    "playwright.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test-results",
+    "playwright-report"
+  ]
+}
